@@ -28,6 +28,8 @@ SKIP_BUTTON = {'x': 1200, 'y': 70}
 CONFIRM = {'x': 830, 'y': 600}
 AGREE = {'x': 335, 'y':755}
 ATTACK = {'x': 1125, 'y': 630}
+LEFT_EDGE = {'x': 10, 'y': 400}
+CLOSE_SETTING = {'x' :235, 'y' :464}
 NOX_PATH = "D:\\Program Files\\Nox\\bin\\Nox.exe"
 
 def StartNoxProcess():
@@ -94,9 +96,11 @@ def image_is_on_screen(template_name):
 
     return False
 
-
 def click_until(*images):
     pyautogui.PAUSE = 0.2 * PAUSE_TIME
+    start_time = time.time()
+    curr_time= 0
+    elap_time = 0
     while True:
         for pos, image in enumerate(images):
             if image_is_on_screen("error"):
@@ -105,12 +109,19 @@ def click_until(*images):
                 pyautogui.PAUSE = PAUSE_TIME
                 wait(0.5)
                 return pos
-
+            elif elap_time == 360:
+                close_app()
+                doReroll()
+            curr_time = time.time()
+            elap_time = curr_time - start_time
         for _ in range(10):
             touch(**LEFT_EDGE)
 
 
 def wait_until(*images):
+    start_time = time.time()
+    curr_time = 0
+    elap_time = 0
     while True:
         for pos, image in enumerate(images):
             if image_is_on_screen("error"):
@@ -118,230 +129,255 @@ def wait_until(*images):
             elif image_is_on_screen(image):
                 wait(0.5)
                 return pos
+            elif elap_time == 360:
+                close_app()
+                doReroll()
+            curr_time = time.time()
+            elap_time = curr_time - start_time
+
 def remove_pref():
     close_app()
-    touch(142, 328)
-    touch(397, 800)
-    pyautogui.typewrite("playerpref", interval=.25)
-    touch(238, 139)
-    wait_until("playerpref")
-    pyautogui.mouseDown(260, 125, button='left', duration=2.3)
-    wait(1)
-    touch(280, 390)
-    touch(280, 390)
-    touch(355, 500)
+    touch(50,320)
+    wait_until("random_org_site1")
+    pyautogui.mouseDown(105,460,duration=2)
+    pyautogui.click(350,75,clicks=2)
+    close_app()
+    touch(140, 320) #pos filemanager
+    touch(110,265)
+    touch(110,516)
+    while(True):
+        pyautogui.moveTo(275, 720)
+        pyautogui.dragTo(275, 200,duration=.01)
+        if image_is_on_screen("checkerFileManager"):
+            break
+        touch(15,85)
+    touch(110,560)
+    touch(110,465)
+    pyautogui.mouseDown(110,270, duration=2.5)
+    wait(.1)
+    pyautogui.click(290,390,clicks=2)
+    pyautogui.mouseDown(360,450,duration=2.1)
+    pyautogui.click(332,421,clicks=2)
+    touch(350,510)
+
+    # touch(397, 800)
+    # pyautogui.typewrite("playerpref", interval=.25)
+    # touch(238, 139)
+    # wait_until("playerpref")
+    # pyautogui.mouseDown(260, 125, button='left', duration=2.3)
+    # wait(1)
+    # touch(280, 390)
+    # touch(280, 390)
+    # touch(355, 500)
     touch(**HOME_BUTTON)
 
-if __name__ == '__main__':
+def doReroll():
     TimeIOError = 0
-    if not os.path.exists(ROLLS_FOLDER):
-        os.mkdir(ROLLS_FOLDER)
     try:
         while True:
-
             StartNoxProcess()
-            # # First Launch
-            # wait_until('dx2_icon')
-            # remove_pref()
-            # wait_until('dx2_icon')
-            # touch(**HOME_BUTTON)
-            # touch(**DX2_ICON)  # Game Icon
-            #
-            # # # Intro
-            # click_until('Terms')
-            # touch(**AGREE)  # AGREE TOS
-            # wait_until('check_setting')
-            # touch(**CLOSE_SETTING)
-            #
-            # # titlescreen
-            # wait_until('title_start')
-            # touch(246, 605)  # start button
-            # wait_until('scene1')
-            # # skip
-            # touch(447, 750)
-            # wait(0.5)
-            # touch(447, 750)
-            # # charselect
-            # wait(0.5)
-            # touch(149, 423)
-            # wait(0.5)
-            # touch(149, 423)
-            # # writename
-            # pyautogui.typewrite(NAME, interval=0.25)
-            # touch(245, 360)
-            # touch(245, 500)
-            # wait_until('confirm_name')
-            # touch(297, 494)
-            # #skip
-            # wait_until("menu_button_rev")
-            # touch(460, 775)
-            # wait(2)
-            # touch(437, 775)
-            # #battlescene
-            # #wait_until("tut_battle_1")
-            # click_until("tut_battle_1_arrow2")
-            # touch(140,620)
-            # click_until("tut_battle_1_2")
-            # touch(140, 620)
-            # #2ndmob
-            # click_until("tut_battle_1_arrow4")
-            # touch(230,590)
-            # click_until("tut_battle_1_2")
-            # touch(320,595)
-            # # #3rdmob
-            # click_until("fairy_ava")
-            # touch(230, 590)
-            # click_until("dog_ava_smol")
-            # touch(320, 595)
-            # wait(3)
-            # touch(230, 590)
-            # click_until("end_combat_1")
-            # touch(450, 790)
-            # touch(450, 790)
-            # touch(450, 790)
-            # #movie
-            # click_until("skip_1")
-            # touch(290,500)
-            #
-            # click_until("dialogue1")
-            # touch(311,360)
-            # click_until("arrow1")
-            # touch(446,770)
-            # #click_until("arrow1_3") #here atm
-            # touch(460,791)
-            # wait(.5)
-            # touch(309,716)
-            # click_until("dialogue2")
-            # touch(343,353)
-            # click_until("arrow2")
-            # touch(186,129)
-            # click_until("arrow3")
-            # touch(252,626)
-            # touch(36,787)
-            # touch(36, 787)
-            # touch(36, 787)
-            # touch(36, 787)
-            # touch(36, 787)
-            # #arrow4
-            # click_until("pop1_1")
-            # touch(239,720)
-            # click_until("arrow5_1")
-            # touch(458,781)
-            # click_until("menu1")
-            # touch(457,776)
-            # wait(1)
-            # #home
-            # touch(232,765)
-            # click_until("home1")
-            # touch(194,616)
-            # touch(107,706)
-            # click_until("mail1")
-            # touch(193,770)
-            # touch(320,499)
-            # touch(247,496)
-            # touch(457, 776)
-            # wait(1)
-            # touch(374,760)
-            # wait(1)
-            # touch(317,375)
-            #
-            # #prologue
-            # wait(2)
-            # touch(301,367)
-            # wait(1)
-            # touch(344,168)
-            # wait(1)
-            # touch(466,783)
-            # touch(444,769)
-            # #bat1
-            # wait_until("wait_bat2")
-            # touch(410,290)
-            # wait_until("bat1")
-            # touch(241, 550)
-            # #menu skip
-            # wait_until("menu_button")
-            # touch(455,776)
-            # touch(440,770)
+            # First Launch
+            wait_until('dx2_icon')
+            remove_pref()
+            wait_until('dx2_icon')
+            touch(**HOME_BUTTON)
+            touch(**DX2_ICON)  # Game Icon
 
-            # click_until("bat2_arrow1")
-            # touch(226,142)
-            # click_until("interaction_mid")
-            # click_until("mokoi_interaction")
-            # touch(95,513)
-            # touch(95, 513)
-            # click_until("interaction_mid")
-            # touch(95, 513)
-            # click_until("interaction_mid")
-            # click_until("mokoi_interaction")
-            # touch(95, 513)
-            # touch(95, 513)
-            # click_until("bat2_pop1")
-            # touch(435,425)
-            # touch(435, 425)
-            # touch(236,722)
-            # click_until("tut_battle_1_4")
-            # #battleskip
-            # touch(453,136)
-            # touch(453,136)
-            # #
-            # #change_auto
-            # touch(466,502)
-            # wait_until("auto_talk_menu_button")
-            # touch(383,658)
-            # touch(187,479)
-            # touch(176,744)
-            # touch(32,788)
-            # touch(306,505)
-            # touch(440,75)
-            # #
-            #
-            # click_until("bat2_end")
-            # touch(442,790)
-            # wait(1)
-            # touch(442, 790)
-            # touch(442, 790)
-            # wait_until("close_button")
-            # touch(251,551)
-            # touch(442, 790)
-            # wait(1)
-            # # menu skip
-            # wait_until("menu_button_rev")
-            # touch(455, 776)
-            # wait(1)
-            # touch(440, 770)
-            # #
-            # touch(378,656)
-            # touch(378, 656)
-            # wait_until("chap1_2")
-            # touch(416,292)
-            # click_until("bat3_start")
-            # touch(237,404)
-            # click_until("bat3_start1_play")
-            # touch(77,146)
-            # click_until("bat3_start2")
-            # touch(332,451)
-            # wait_until("bat3_start3")
-            # touch(247,335)
-            # click_until("bat3_start4")
-            # touch(238,547)
-            # # menu skip
-            # wait_until("menu_button_rev")
-            # touch(455, 776)
-            # touch(440, 770)
-            # #
-            # click_until("skip_button")
-            # touch(444,783)
-            # wait_until("skip_button_message")
-            # touch(305,503)
-            #
-            # click_until("neko_ava")
-            # # battleskipfull
-            # touch(440, 75)
-            # touch(453, 136)
-            # touch(453, 136)
+            # # Intro
+            click_until('Terms')
+            touch(**AGREE)  # AGREE TOS
+            wait_until('check_setting')
+            touch(**CLOSE_SETTING)
 
-            # click_until("chap2_2_1")
-            # touch(140, 595)
+            # titlescreen
+            wait_until('title_start')
+            touch(246, 605)  # start button
+            wait_until('scene1')
+            # skip
+            touch(447, 750)
+            wait(0.5)
+            touch(447, 750)
+            # charselect
+            wait(0.5)
+            touch(149, 423)
+            wait(0.5)
+            touch(149, 423)
+            # writename
+            pyautogui.typewrite(NAME, interval=0.25)
+            touch(245, 360)
+            touch(245, 500)
+            wait_until('confirm_name')
+            touch(297, 494)
+            #skip
+            wait_until("menu_button_rev")
+            touch(460, 775)
+            wait(2)
+            touch(437, 775)
+            #battlescene
+            #wait_until("tut_battle_1")
+            click_until("tut_battle_1_arrow2")
+            touch(140,620)
+            click_until("tut_battle_1_2")
+            touch(140, 620)
+            #2ndmob
+            click_until("tut_battle_1_arrow4")
+            touch(230,590)
+            click_until("tut_battle_1_2")
+            touch(320,595)
+            # #3rdmob
+            click_until("fairy_ava")
+            touch(230, 590)
+            click_until("dog_ava_smol")
+            touch(320, 595)
+            wait(3)
+            touch(230, 590)
+            click_until("end_combat_1")
+            touch(450, 790)
+            touch(450, 790)
+            touch(450, 790)
+            #movie
+            click_until("skip_1")
+            touch(290,500)
+
+            click_until("dialogue1")
+            touch(311,360)
+            click_until("arrow1")
+            touch(446,770)
+            #click_until("arrow1_3") #here atm
+            touch(460,791)
+            wait(.5)
+            touch(309,716)
+            click_until("dialogue2")
+            touch(343,353)
+            click_until("arrow2")
+            touch(186,129)
+            click_until("arrow3")
+            touch(252,626)
+            touch(36,787)
+            touch(36, 787)
+            touch(36, 787)
+            touch(36, 787)
+            touch(36, 787)
+            #arrow4
+            click_until("pop1_1")
+            touch(239,720)
+            click_until("arrow5_1")
+            touch(458,781)
+            click_until("menu1")
+            touch(457,776)
+            wait(1)
+            #home
+            touch(232,765)
+            click_until("home1")
+            touch(194,616)
+            touch(107,706)
+            click_until("mail1")
+            touch(193,770)
+            touch(320,499)
+            touch(247,496)
+            touch(457, 776)
+            wait(1)
+            touch(374,760)
+            wait(1)
+            touch(317,375)
+
+            #prologue
+            wait(2)
+            touch(301,367)
+            wait(1)
+            touch(344,168)
+            wait(1)
+            touch(466,783)
+            touch(444,769)
+            #bat1
+            wait_until("wait_bat2")
+            touch(410,290)
+            wait_until("bat1")
+            touch(241, 550)
+            #menu skip
+            wait_until("menu_button")
+            touch(455,776)
+            touch(440,770)
+
+            click_until("bat2_arrow1")
+            touch(226,142)
+            click_until("interaction_mid")
+            click_until("mokoi_interaction")
+            touch(95,513)
+            touch(95, 513)
+            click_until("interaction_mid")
+            touch(95, 513)
+            click_until("interaction_mid")
+            click_until("mokoi_interaction")
+            touch(95, 513)
+            touch(95, 513)
+            click_until("bat2_pop1")
+            touch(435,425)
+            touch(435, 425)
+            touch(236,722)
+            click_until("tut_battle_1_4")
+            #battleskip
+            touch(453,136)
+            touch(453,136)
+            #
+            #change_auto
+            touch(466,502)
+            wait_until("auto_talk_menu_button")
+            touch(383,658)
+            touch(187,479)
+            touch(176,744)
+            touch(32,788)
+            touch(306,505)
+            touch(440,75)
+            #
+
+            click_until("bat2_end")
+            touch(442,790)
+            wait(1)
+            touch(442, 790)
+            touch(442, 790)
+            wait_until("close_button")
+            touch(251,551)
+            touch(442, 790)
+            wait(1)
+            # menu skip
+            wait_until("menu_button_rev")
+            touch(455, 776)
+            wait(1)
+            touch(440, 770)
+            #
+            touch(378,656)
+            touch(378, 656)
+            wait_until("chap1_2")
+            touch(416,292)
+            click_until("bat3_start")
+            touch(237,404)
+            click_until("bat3_start1_play")
+            touch(77,146)
+            click_until("bat3_start2")
+            touch(332,451)
+            wait_until("bat3_start3")
+            touch(247,335)
+            click_until("bat3_start4")
+            touch(238,547)
+            # menu skip
+            wait_until("menu_button_rev")
+            touch(455, 776)
+            touch(440, 770)
+            #
+            click_until("skip_button")
+            touch(444,783)
+            wait_until("skip_button_message")
+            touch(305,503)
+
+            click_until("neko_ava")
+            # battleskipfull
+            touch(440, 75)
+            touch(453, 136)
+            touch(453, 136)
+
+            click_until("chap2_2_1")
+            touch(140, 595)
 
             click_until("mokoi_ava")
             click_until("mokoi_ava")
@@ -408,8 +444,9 @@ if __name__ == '__main__':
             click_until("sum4")
             touch(241,514)
             click_until("sum5")
-            pyautogui.moveTo(195, 505)  # Move Cursor Over GO
+            pyautogui.moveTo(195, 505)
             pyautogui.dragTo(195, 100, 3, button='left')
+
             wait_until("sum_tix1")
             touch(396,339)
             touch(261,679)
@@ -501,3 +538,8 @@ if __name__ == '__main__':
             else:
                 logger.error("Waiting for nox: %s/%s" % (TimeIOError, 70))
         time.sleep(4)
+
+if __name__ == '__main__':
+    if not os.path.exists(ROLLS_FOLDER):
+        os.mkdir(ROLLS_FOLDER)
+    doReroll()
