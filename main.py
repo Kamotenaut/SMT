@@ -24,20 +24,10 @@ pyautogui.FAILSAFE = True
 HOME_BUTTON = {'x': 503, 'y': 757}
 DX2_ICON = {'x': 337, 'y': 438}
 FILE_MANAGER = {'x' : 147, 'y' : 294}
-CLEAR_DATA_ICON = {'x': 420, 'y': 380}
 SKIP_BUTTON = {'x': 1200, 'y': 70}
 CONFIRM = {'x': 830, 'y': 600}
 AGREE = {'x': 335, 'y':755}
 ATTACK = {'x': 1125, 'y': 630}
-EXCAL = {'x': 400, 'y': 250}
-NAME_FIELD = {'x': 900, 'y': 400}
-NAME_CONFIRM = {'x': 900, 'y': 500}
-NAME_CONFIRM_2 = {'x': 850, 'y': 600}
-NEXT = {'x': 1110, 'y': 700}
-CLOSE = {'x': 640, 'y': 590}
-MENU = {'x': 1190, 'y': 715}
-LEFT_EDGE = {'x': 10, 'y': 400}
-CLOSE_SETTING = {'x' :235, 'y' :464}
 NOX_PATH = "D:\\Program Files\\Nox\\bin\\Nox.exe"
 
 def StartNoxProcess():

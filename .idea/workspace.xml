@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/../SMTDX2GachaRoller/main.py" line="229" mnemonic="3" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1042a7a-9024-46d4-9667-0cc5dbddc9c1" name="Default Changelist" comment="" />
+    <list default="true" id="e1042a7a-9024-46d4-9667-0cc5dbddc9c1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,29 +51,44 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1883628550">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/main.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="68" column="29" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-                <marker date="1533209171684" expanded="true" signature="1009:1502" ph="..." />
-                <marker date="1533209171684" expanded="true" signature="1613:1615" ph="..." />
-                <marker date="1533209171684" expanded="true" signature="10791:10852" ph="..." />
-              </folding>
+            <state relative-caret-position="1198">
+              <caret line="1639" column="35" selection-start-line="1639" selection-start-column="35" selection-end-line="1639" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="1639" column="35" lean-forward="true" selection-start-line="1639" selection-start-column="35" selection-end-line="1639" selection-end-column="35" />
+            <state relative-caret-position="360">
+              <caret line="33" column="8" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,36 +100,6 @@
               <caret line="85" selection-start-line="85" selection-end-line="85" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/sum6.PNG">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/pull1.PNG">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/fusion4.PNG">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/sum2.PNG">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/sum1.PNG">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/fusion2.PNG">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -156,12 +140,15 @@
       <find>image_is_on_screen</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/adb_android/adb_android.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/../SMTDX2GachaRoller/main.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -181,23 +168,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="SMTDX2GachaRoller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SMTDX2GachaRoller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SMTDX2GachaRoller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SMTDX2GachaRoller" type="462c0819:PsiDirectoryNode" />
-              <item name="rolls" type="462c0819:PsiDirectoryNode" />
+              <item name="SMTDX2Reroll" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -445,7 +427,7 @@
     <frame x="521" y="0" width="1395" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1835206" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18651685" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -456,7 +438,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" />
@@ -519,128 +501,59 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/dialogue2.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/arrow2.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/arrow3.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/pop1.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/arrow4_1.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/arrow4_2.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/arrow4.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/dialogue1.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/arrow1_1.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/arrow1_2.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/arrow1.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/arrow1_3.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/skip_1.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/bat2_arrow1.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/bat1.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/tut_battle_1_arrow.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/tut_battle_1_3.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/bat2_1.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/bat3_start1.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/bat3_start.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/bat3_1.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/menu_button.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/menu1.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/menu2.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/fusion3.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/sum3.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/sum4.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/sum5.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/tut_battle_1.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/tut_battle_1_4.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/tut_battle_1_2.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/end_combat_1.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/end_combat_1_2.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/end_combat_1_2_1.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/tut_battle_1_arrow2.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/fusion1.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/stars5.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/stars4.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/wait_bat2.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/close_button.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/chap2_2_1.PNG">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/arrow2.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/arrow3.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/pop1.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/arrow4_1.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/arrow4_2.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/arrow4.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/dialogue1.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/arrow1_1.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/arrow1_2.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/arrow1.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/arrow1_3.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/skip_1.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/bat2_arrow1.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/bat1.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/tut_battle_1_arrow.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/tut_battle_1_3.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/bat2_1.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/bat3_start1.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/bat3_start.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/bat3_1.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/menu_button.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/menu1.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/menu2.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/fusion3.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/sum3.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/sum4.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/sum5.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/tut_battle_1.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/tut_battle_1_4.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/tut_battle_1_2.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/end_combat_1.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/end_combat_1_2.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/end_combat_1_2_1.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/tut_battle_1_arrow2.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/fusion1.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/stars5.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/stars4.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/wait_bat2.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/close_button.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/chap2_2_1.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/sum6.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/pull1.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/fusion4.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/sum2.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/sum1.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/fusion2.PNG" />
+    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/main.py" />
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1198">
+          <caret line="1639" column="35" selection-start-line="1639" selection-start-column="35" selection-end-line="1639" selection-end-column="35" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/ntpath.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -649,24 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/sum6.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/pull1.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/fusion4.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/sum2.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/sum1.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/screenshots/fusion2.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pyautogui/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20600">
@@ -674,22 +569,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="1639" column="35" lean-forward="true" selection-start-line="1639" selection-start-column="35" selection-end-line="1639" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SMTDX2GachaRoller/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="68" column="29" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
+        <state relative-caret-position="360">
+          <caret line="33" column="8" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-            <marker date="1533209171684" expanded="true" signature="1009:1502" ph="..." />
-            <marker date="1533209171684" expanded="true" signature="1613:1615" ph="..." />
-            <marker date="1533209171684" expanded="true" signature="10791:10852" ph="..." />
           </folding>
         </state>
       </provider>
